@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+    <body>
+        <header>
+            <h1>HTML Cheatsheet</h1>
+        </header>
+        <div class="toolbar">
+            <button onclick="showHTML()">HTML Cheatsheet</button>
+            <button onclick="showCSS()">CSS Cheatsheet</button>
+            <button onclick="showMypage()">Hobbies and Likings</button>
+        </div>
+            <main>
+<!--Basic Tab----------------------------------------------------------------->
+                <section class="code-section" id="basic-tags">
+                    <h2 onclick="toggleSection('basic-tags')">▼ Basic Tags ▼</h2>
+                    <div class="code-explanation">
+                        <code>&lt;html&gt; &lt;/html&gt;</code>
+                        <p>This is the root element of an HTML page.</p><br>
+                    </div>
+                    
+                    
+                    <div class="code-explanation">
+                            <code>
+                                &lt;head&gt; &lt;/head&gt;
+                            </code>
+                        
+                        <p>Sets off the title and other information that isn't displayed.</p>
+                        <br>
+                    </div>
+
+                    <div class="code-explanation">
+                        
+                            <code>
+                                &lt;body&gt; &lt;/body&gt;
+                            </code>
+                        
+                        <p>Sets off the visible portion of the document.</p>
+                    <br>
+                    </div>
+
+                    <div class="code-explanation">
+                        
+                            <code>
+                                &lt;title&gt; &lt;/title&gt;
+                            </code>
+                        
+                        <p>Puts the name of the document in the title bar. When bookmarking pages, this is what is bookmarked.</p>
+                        <br>
+                    </div>
+                </section>
+
+<!--Text Tab--------------------------------------------------------------------------->
+                <section class="code-section" id="text-tags">
+                    <h2 onclick="toggleSection('text-tags')">▼ Text Tags ▼</h2>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;pre&gt; &lt;/pre&gt;
+                    </code>
+                    <p>Creates preformatted text.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;h1&gt; &lt;/h1&gt; &lt;h6&gt; &lt;/h6&gt;
+                    </code>
+                    <p>Creates headlines. <code>&lt;h1&gt;</code> is the largest, and <code>&lt;h6&gt;</code> is the smallest.</p>
+                    <br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;b&gt; &lt;/b&gt; (use &lt;strong&gt; instead)
+                    </code>
+                    <p>Creates bold text. It's recommended to use <code>&lt;strong&gt;</code> instead for semantic meaning.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;i&gt; &lt;/i&gt; (use &lt;em&gt; instead)
+                    </code>
+                    <p>Creates italicized text. It's recommended to use <code>&lt;em&gt;</code> instead for semantic meaning.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;tt&gt; &lt;/tt&gt;
+                    </code>
+                    <p>Creates typewriter-style text.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;code&gt; &lt;/code&gt;
+                    </code>
+                    <p>Used to define source code, usually monospace.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;cite&gt; &lt;/cite&gt;
+                    </code>
+                    <p>Creates a citation, usually processed in italics.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;address&gt; &lt;/address&gt;
+                    </code>
+                    <p>Creates an address section, usually processed in italics.</p><br>
+                    </div>
+                    <div class="code-explanation">
+                    <code>
+                        &lt;em&gt; &lt;/em&gt; (use &lt;i&gt; instead)
+                    </code>
+                    <p>Emphasizes a word, usually processed in italics. It's recommended to use <code>&lt;i&gt;</code> instead for semantic meaning.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                    <code>
+                        &lt;strong&gt; &lt;/strong&gt; (use &lt;b&gt; instead)
+                    </code>
+                    <p>Emphasizes a word, usually processed in bold. It's recommended to use <code>&lt;b&gt;</code> instead for semantic meaning.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                    <code>
+                        &lt;font size=?&gt; &lt;/font&gt; (should use CSS instead)
+                        &lt;font color=?&gt; &lt;/font&gt; (should use CSS instead)
+                        &lt;font face=?&gt; &lt;/font&gt; (should use CSS instead)
+                    </code>
+                    <p>These tags set the size, color, and face of the font. It's recommended to use CSS instead for styling.</p><br>
+                    </div>
+
+                </section>
+<!--Links Tab----------------------------------------------------------------->
+                <section class="code-section" id="Links">
+                    <h2 onclick="toggleSection('Links')">▼ Links ▼</h2>
+                    <div class="code-explanation">
+                        <code>
+                            &lt;a href="URL"&gt;clickable text&lt;/a&gt;
+                        </code>
+                    <p>Creates a hyperlink to a Uniform Resource Locator (URL).</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;a href="mailto:EMAIL_ADDRESS"&gt;clickable text&lt;/a&gt;
+                        </code>
+                    <p>Creates a hyperlink to an email address.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;a name="NAME"&gt;
+                        </code>
+                    <p>Creates a target location within a document.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;a href="#NAME"&gt;clickable text&lt;/a&gt;
+                        </code>
+                    <p>Creates a link to that target location.</p><br>
+                    </div>
+                </section>
+            
+<!--Formatting Tab------------------------------------------------------------------------------>
+                <section class="code-section" id="Formatting">
+                    <h2 onclick="toggleSection('Formatting')">▼ Formatting ▼</h2>
+                    <div class="code-explanation">
+                        <code>
+                            &lt;p&gt; &lt;/p&gt;
+                        </code>
+                    <p>Creates a new paragraph.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;br&gt;
+                        </code>
+                    <p>Inserts a line break (carriage return).</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;blockquote&gt; &lt;/blockquote&gt;
+                        </code>
+                    <p>Puts content in a quote, indents text from both sides.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;div&gt; &lt;/div&gt;
+                        </code>
+                    <p>Used to format block content with CSS.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;span&gt; &lt;/span&gt;
+                        </code>
+                    <p>Used to format inline content with CSS.</p><br>
+                    </div>
+                </section>
+            
+<!--Lists Tab------------------------------------------------------------------->
+                <section class="code-section" id="list">
+                    <h2 onclick="toggleSection('list')">▼ Lists ▼</h2>
+                    <div class="code-explanation">
+                        <code>
+                            &lt;ul&gt; &lt;/ul&gt;
+                        </code>
+                    <p>Creates an unordered list.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;ol start=?&gt; &lt;/ol&gt;
+                        </code>
+                    <p>Creates an ordered list. Use <code>start=xx</code> where <code>xx</code> is a counting number to specify the starting number.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;li&gt; &lt;/li&gt;
+                        </code>
+                    <p>Encompasses each list item.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;dl&gt; &lt;/dl&gt;
+                        </code>
+                    <p>Creates a definition list.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;dt&gt;
+                        </code>
+                    <p>Precedes each definition term.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;dd&gt;
+                        </code>
+                    <p>Precedes each definition.</p><br>
+                    </div>
+                </section>
+
+<!--Graphical Tab--------------------------------------------------------------------->
+                <section class="code-section" id="Graphical">
+                    <h2 onclick="toggleSection('Graphical')">▼ Graphical Elements ▼</h2>
+                    <div class="code-explanation">
+                        <code>
+                            &lt;hr&gt;
+                        </code>
+                    <p>Inserts a horizontal rule.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;hr size=?&gt;
+                        </code>
+                    <p>Sets the size (height) of the horizontal rule.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;hr width=?&gt;
+                        </code>
+                    <p>Sets the width of the rule (as a % or absolute pixel length).</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;hr noshade&gt;
+                        </code>
+                    <p>Creates a horizontal rule without a shadow.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;img src="URL" /&gt;
+                        </code>
+                    <p>Adds an image; it is a separate file located at the URL.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;img src="URL" align=?&gt;
+                        </code>
+                    <p>Aligns the image left/right/center/bottom/top/middle (use CSS).</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;img src="URL" border=?&gt;
+                        </code>
+                    <p>Sets the size of the border surrounding the image (use CSS).</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;img src="URL" height=?&gt;
+                        </code>
+                    <p>Sets the height of the image, in pixels.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;img src="URL" width=?&gt;
+                        </code>
+                    <p>Sets the width of the image, in pixels.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;img src="URL" alt=?&gt;
+                        </code>
+                    <p>Sets the alternate text for browsers that can't process images (required by the ADA).</p><br>
+                    </div>
+                </section>
+            
+<!--Tables Tab--------------------------------------------------------->
+                <section class="code-section" id="Tables">
+                    <h2 onclick="toggleSection('Tables')">▼ Tables ▼</h2>
+                    <div class="code-explanation">
+                        <code>
+                            &lt;table&gt; &lt;/table&gt;
+                        </code>
+                    <p>Creates a table.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;tr&gt; &lt;/tr&gt;
+                        </code>
+                    <p>Sets off each row in a table.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;td&gt; &lt;/td&gt;
+                        </code>
+                    <p>Sets off each cell in a row.</p><br>
+                    </div>
+
+                    <div class="code-explanation">
+                        <code>
+                            &lt;th&gt; &lt;/th&gt;
+                        </code>
+                    <p>Sets off the table header (a normal cell with bold, centered text).</p><br>
+                    </div>
+                </section>
+            </main>
+
+            
+
+
+    </body>
+
+</html>
