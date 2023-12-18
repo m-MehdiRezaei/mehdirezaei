@@ -10,7 +10,7 @@ header {
     position: relative;
     text-align: center;
     padding: 80px 0;
-    background: url('https://images.pexels.com/photos/2606532/pexels-photo-2606532.jpeg?cs=srgb&dl=pexels-tom-fisk-2606532.jpg&fm=jpg') center/cover no-repeat;
+    background: url('resources/banner.jpg') center/cover no-repeat;
     color: #fff;
 }
 
